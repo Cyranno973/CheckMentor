@@ -1,4 +1,4 @@
-import mongoose, {Document}	from 'mongoose';
+import mongoose, {Schema, Document}	from 'mongoose';
 interface IStudent extends Document {
 	nom: string;
 	prenom: string;
@@ -8,7 +8,8 @@ interface IStudent extends Document {
 	progressionActuelle: number;
 	progressionAttendue: number;
 }
-const studentSchema = new mongoose.Schema({	nom: {type: String, required: true},
+const studentSchema = new mongoose.Schema({
+	nom: {type: String, required: true},
 	prenom: {type: String, required: true},
 	dateFinFormation: {type: Date, required: true},
 	projetEnCours: {type: String, required: true},
