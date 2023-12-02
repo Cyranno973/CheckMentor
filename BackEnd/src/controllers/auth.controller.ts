@@ -5,9 +5,11 @@ import jwt from 'jsonwebtoken';
 const secretKey = process.env.JWT_SECRET || 'your_secret_key';
 
 export const signup = async (req: Request, res: Response) => {
+  console.log('signup');
+  
   try {
-    const { email, password } = req.body;
-    const user = new User({ email, password });
+    const { email, username, password } = req.body;
+    const user = new User({ email, username, password });
     await user.save();
     res.status(201).json({ message: 'User created successfully' });
   } catch (error: any) {

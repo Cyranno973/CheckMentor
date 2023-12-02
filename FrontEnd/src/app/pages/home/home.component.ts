@@ -1,4 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {StudentService} from "../../service/student.service";
+import {UserService} from "../../service/user.service";
 
 @Component({
   selector: 'app-home',
@@ -7,14 +9,10 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   encapsulation:ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
-  links = [
-    { path: '/login', label: 'First' },
-    { path: '/register', label: 'Second' }
-    // Ajoutez d'autres liens ici
-  ];
-  constructor() { }
+  bool: boolean = true;
+  constructor(private userService: UserService) {}
 
   ngOnInit(): void {
+   // this.userService.getStudents().subscribe(student => console.log(student));
   }
-
 }

@@ -1,0 +1,51 @@
+@use './../../../scss/utilities/_variables.scss' as *;
+
+.container-register {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  margin: 0 auto;
+  width: 80%;
+
+  .mat-mdc-form-field {
+    width: 100%;
+  }
+}
+
+.or {
+  text-align: center;
+  margin: 1rem 0 !important;
+}
+
+.reseau {
+  padding: 1rem 2rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    margin: 0 15px;
+    text-align: center;
+  }
+}
+
+button {
+  width: 50%;
+  color: #000 !important;
+  background-color: $couleur-principale !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: block !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  //background-color: red !important;
+}

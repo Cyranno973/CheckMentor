@@ -15,6 +15,10 @@ import {RegisterFormComponent} from './pages/register-form/register-form.compone
 import {LoginFormComponent} from './pages/login-form/login-form.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
+import {HttpClientModule} from "@angular/common/http";
+import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -35,6 +39,11 @@ import {MatInputModule} from "@angular/material/input";
     CoreModule,
     MatTabsModule,
     MatInputModule,
+    MatButtonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
