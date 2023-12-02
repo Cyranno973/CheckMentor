@@ -1,0 +1,8 @@
+<p class="welcome">Welcome {{user}}</p>
+<mat-card *ngFor="let student of students">
+  <mat-card-content>
+    <span> {{student.nom | titlecase}}</span>
+    <span> {{student.prenom | titlecase}}</span>
+    <p> {{student.projetEnCours}}</p>
+  </mat-card-content>
+</mat-card>
