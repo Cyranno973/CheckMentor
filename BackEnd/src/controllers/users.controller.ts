@@ -37,6 +37,20 @@ export const getUserById = async (req:Request, res:Response) => {
 		res.status(500).send({message: err.message})
 	}
 }
+export const getUserByMail = async (req:Request, res:Response) => {
+	const {mail} = req.body;
+	try{
+		const user = await User.findOne({email: mail});
+		if(!user){
+			return res.status(404).json({message: "User not found"}); 
+		}
+		res.status(200).json(user);
+	}
+	catch(err: any) {
+		res.status(500).send({message: err.message})
+	}
+}
+
 export const deleteUser = async (req:Request, res:Response) => {
 	const {id} = req.params;
 	try{
