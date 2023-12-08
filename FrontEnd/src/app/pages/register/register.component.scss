@@ -9,12 +9,17 @@
 }
 
 form {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 80%;
 
-  .mat-mdc-form-field {
-    width: 100%;
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label--float-above
+ {
+    color: #000 !important;
   }
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: rgb(170 5 5 / 87%);
+  }
+
 }
 
 .or {

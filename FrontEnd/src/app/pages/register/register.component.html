@@ -1,6 +1,6 @@
 <div class="container-register">
   <form (ngSubmit)="sendForm()" [formGroup]="registerForm" class="example-form">
-    <mat-form-field class="example-full-width">
+    <mat-form-field appearance="outline" class="example-full-width">
       <mat-label>Username</mat-label>
       <input formControlName="username" matInput value="">
     </mat-form-field>
@@ -17,7 +17,7 @@
       <input formControlName="passwordConfirm" matInput placeholder="" value="">
     </mat-form-field>
     <button *ngIf="!bool" mat-button>Log In</button>
-    <button class="btn-sign" color="primary" mat-button>Sign Up</button>
+    <button class="btn-signaaa" color="accent" mat-button>Sign Up</button>
   </form>
   <p class="or">OR</p>
 

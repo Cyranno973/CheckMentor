@@ -1,7 +1,54 @@
 <div class="container-home">
   <h1 *ngIf="!bool" class="wel">Bienvenue <span class="prenom">Steve</span></h1>
-  <ul>
-    <li routerLink="login"  routerLinkActive="active">CONNEXION</li>
-    <li routerLink="" routerLinkActive="register">INSCRIPTION</li>
-  </ul>
+  <!--  <ul>-->
+  <!--    <li routerLink="login"  routerLinkActive="active">CONNEXION</li>-->
+  <!--    <li routerLink="" routerLinkActive="register">INSCRIPTION</li>-->
+  <!--  </ul>-->
+  <div class="home-header">
+    <div class="home-avatar">
+      <img src="./assets/perfil.png" alt="photo de profile">
+    </div>
+  </div>
+  <div class="home-content">
+    <h2 class="sectionTitle">Mon Historique</h2>
+    <mat-divider></mat-divider>
+    <div class="home-cards">
+      <mat-card>
+        <div class="card-type">
+          <mat-icon fontIcon="event_available"></mat-icon>
+          <span class="type">Mentorat</span>
+        </div>
+        <div class="card-name">Thomas Mascaret</div>
+        <div class="card-date">8 décembre 2023 à 15:30</div>
+        <div class="card-expertise">
+          <span>Expertise</span>
+          <span>2</span>
+        </div>
+      </mat-card>
+      <mat-card>
+        <div class="card-type">
+          <mat-icon fontIcon="event_available"></mat-icon>
+          <span class="type">Mentorat</span>
+        </div>
+        <div class="card-name">Thomas Mascaret</div>
+        <div class="card-date">8 décembre 2023 à 15:30</div>
+        <div class="card-expertise">
+          <span>Expertise</span>
+          <span>2</span>
+        </div>
+      </mat-card>
+      <mat-card>
+        <div class="card-type">
+          <mat-icon fontIcon="event_available"></mat-icon>
+          <span class="type">Mentorat</span>
+        </div>
+        <div class="card-name">Thomas Mascaret</div>
+        <div class="card-date">8 décembre 2023 à 15:30</div>
+        <div class="card-expertise">
+          <span>Expertise</span>
+          <span>2</span>
+        </div>
+      </mat-card>
+    </div>
+  </div>
 </div>

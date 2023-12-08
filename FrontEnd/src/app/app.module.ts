@@ -19,6 +19,9 @@ import {MatButtonModule} from "@angular/material/button";
 import {HttpClientModule} from "@angular/common/http";
 import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
 import {MatCardModule} from "@angular/material/card";
+import {MatIconModule} from "@angular/material/icon";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -42,7 +45,11 @@ import {MatCardModule} from "@angular/material/card";
     MatButtonModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatDividerModule
+
 
   ],
   providers: [],
