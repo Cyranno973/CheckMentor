@@ -6,7 +6,13 @@
   <!--  </ul>-->
   <div class="home-header">
     <div class="home-avatar">
-      <img src="./assets/perfil.png" alt="photo de profile">
+      <button mat-icon-button [matMenuTriggerFor]="afterMenu">
+        <img src="./assets/perfil.png" alt="photo de profile">
+      </button>
+      <mat-menu #afterMenu="matMenu">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>Paramètre</button>
+      </mat-menu>
     </div>
   </div>
   <div class="home-content">
@@ -14,41 +20,53 @@
     <mat-divider></mat-divider>
     <div class="home-cards">
       <mat-card>
+        <div class="card-name">Thomas Mascaret</div>
         <div class="card-type">
-          <mat-icon fontIcon="event_available"></mat-icon>
+<!--          <mat-icon fontIcon="event_available"></mat-icon>-->
           <span class="type">Mentorat</span>
         </div>
-        <div class="card-name">Thomas Mascaret</div>
+
         <div class="card-date">8 décembre 2023 à 15:30</div>
         <div class="card-expertise">
           <span>Expertise</span>
           <span>2</span>
         </div>
       </mat-card>
+
       <mat-card>
-        <div class="card-type">
-          <mat-icon fontIcon="event_available"></mat-icon>
-          <span class="type">Mentorat</span>
-        </div>
         <div class="card-name">Thomas Mascaret</div>
+        <div class="card-type">
+<!--          <mat-icon fontIcon="event_available"></mat-icon>-->
+          <span class="type">Soutenance</span>
+        </div>
+
         <div class="card-date">8 décembre 2023 à 15:30</div>
         <div class="card-expertise">
           <span>Expertise</span>
           <span>2</span>
         </div>
       </mat-card>
+
       <mat-card>
+        <div class="card-name">Thomas Mascaret</div>
         <div class="card-type">
-          <mat-icon fontIcon="event_available"></mat-icon>
+<!--          <mat-icon fontIcon="event_available"></mat-icon>-->
           <span class="type">Mentorat</span>
         </div>
-        <div class="card-name">Thomas Mascaret</div>
+
         <div class="card-date">8 décembre 2023 à 15:30</div>
         <div class="card-expertise">
           <span>Expertise</span>
           <span>2</span>
         </div>
       </mat-card>
+
     </div>
   </div>
+  <mat-paginator [length]="100"
+                 [pageSize]="10"
+                 [pageSizeOptions]="[5, 10, 25, 100]"
+                 aria-label="Select page">
+  </mat-paginator>
+
 </div>

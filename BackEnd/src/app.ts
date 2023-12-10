@@ -25,5 +25,5 @@ app.get('/', (req: Request, res: Response) => res.json({ message: 'Welcome to th
 //routes d'étudiants avec le préfixe `/api/students`
 app.use('/api/students', studentRoutes);
 app.use('/api/auth', authRoutes); // Utilisez les routes d'authentification avec le préfixe '/api/auth'
-app.use('/api/user', userRoutes);
+app.use('/api/users', userRoutes);
 app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));

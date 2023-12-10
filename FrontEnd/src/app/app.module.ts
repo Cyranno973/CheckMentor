@@ -15,13 +15,14 @@ import {RegisterFormComponent} from './pages/register-form/register-form.compone
 import {LoginFormComponent} from './pages/login-form/login-form.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatInputModule} from "@angular/material/input";
-import {MatButtonModule} from "@angular/material/button";
+import {MatButtonModule, MatIconButton} from "@angular/material/button";
 import {HttpClientModule} from "@angular/common/http";
 import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
 import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatDividerModule} from "@angular/material/divider";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -48,8 +49,8 @@ import {MatDividerModule} from "@angular/material/divider";
     MatCardModule,
     MatIconModule,
     MatPaginatorModule,
-    MatDividerModule
-
+    MatDividerModule,
+    MatMenuModule
 
   ],
   providers: [],
